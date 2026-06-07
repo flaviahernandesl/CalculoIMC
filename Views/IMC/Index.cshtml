@@ -1,0 +1,21 @@
+<h2>Calculadora de IMC</h2>
+
+<form method="post">
+
+    <label>Peso:</label>
+    <input type="number" step="0.1" name="peso" />
+    <br /><br />
+
+    <label>Altura:</label>
+    <input type="text" name="altura" placeholder="Ex: 1,70" />
+    <br /><br />
+
+    <button type="submit">Calcular</button>
+
+</form>
+
+@if (ViewBag.IMC != null)
+{
+    <h3>Resultado: @ViewBag.IMC</h3>
+    <h3>Classificação: @ViewBag.Classificacao</h3>
+}
